@@ -1,0 +1,766 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 10px;
+}
+
+/* Code for the mobile devices has been started */
+.container {
+	width: 100%;
+    padding: 0 10px;
+}
+
+.flex {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+main,
+header,
+nav,
+section,
+footer,
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+hr {
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+hr {
+	margin: 0;
+}
+
+p {
+
+}
+
+/* CSS rules for the "header" starts here */
+header {
+	background-color: #222;
+	color: white;
+	/*background-size: 100%;*/
+	/*width: 100%;*/
+	/*height: 100%;*/
+	/*background-repeat: no-repeat;*/
+	/*opacity: 0.8;*/
+	/*color: white;*/
+}
+
+header #my-profile-pic{
+	flex-direction: row;
+	justify-content: center;
+	/*margin: 1.5em 0 1em 0;*/
+}
+
+#my-profile-pic {
+	width: 25em;
+    height: 25em;
+    display: block;
+    border-radius: 50%;
+    border: 0.1em solid #fff;
+    margin: 1.5em auto 1em;
+}
+
+#my-profile-pic img {
+	width: 100%;
+    height: 100%;
+    border: 0.2em solid #fff;
+    border-radius: 50%;
+    border-width: 1em;
+	/*box-shadow: 0.4em 0.4em 0.7em;*/
+
+}
+
+.title-box {
+	justify-content: center;
+}
+
+.title {
+	padding: 5px;
+}
+
+.title h1 {
+	margin: 0 0;
+	font-family: 'Acme', sans-serif;
+	font-size: 3em;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+
+.title-box hr {
+	margin:0;
+	width: 80%;
+}
+
+.title-box .sub-title {
+	padding: 5px;
+
+}
+
+.sub-title h4 {
+	font-size: 1.5em;
+	font-family: 'Acme', sans-serif;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+/* Rules for the Hamburger Diagram starts here */
+.navbar-toggle {
+	display: inline-block;
+	margin: 1.5em auto 1.5em;
+	padding: 0;
+	text-align: center;
+}
+
+.navbar-toggle .fa {
+	border: 0.1em solid lightgray;
+	border-radius: 0.3em;
+	padding: 0.1em 0.3em;
+	cursor: pointer;
+	color: lightgray;
+	font-size: 2.5em;
+}
+
+.social-media-links {
+	justify-content: center;
+}
+
+.social-media-list {
+	list-style: none;
+	margin: 0;
+	padding: 1em;
+	justify-content: center;
+	/*justify-content: space-around;*/
+	/*width: 60%;*/
+}
+
+.sm-list-items {
+	display: inline-block;
+	/*width: 3.5em;
+	height: 3.5em;*/
+	padding: 0 1em;
+	margin-bottom: 0.5em;
+	/*border-radius: 50%;*/
+	/*border: 0.05em solid black;*/
+}
+
+.sm-list-items a {
+	display: inline-block;
+	/*border-radius: 100%;*/
+	/*border: 0.05em solid black;*/
+}
+
+.sm-list-items a i {
+	font-size: 3em;
+}
+
+/*.fa:hover {
+	position: relative;
+	top: -0.1em;
+}*/
+
+.fa-facebook {
+	color:#fff;
+}
+
+.fa-twitter {
+  color: #76a9ea;
+}
+
+.fa-linkedin {
+	color: #0077b7;
+}
+
+.fa-github {
+	color: #fff;
+}
+
+
+/* Commenting out the code till the git hub image is not found */
+
+/*.sm-list-items img:hover {
+	position: relative;
+	top: -0.5em;
+}*/
+
+/* CSS rules for the "nav-bar" starts here */
+nav {
+	/*justify-content: center;*/
+	background-color: #222;
+	border-top:0.1em solid white;
+}
+
+.nav-menu {
+	/*flex-direction: column; */
+	/* Flex-direction should be column so that all the child elements
+	will flow in column mode*/
+	list-style: none;
+	margin: 0;
+	padding: 1em 0 1em 0;
+	/*justify-content: center;*/
+	/*width: 100%;*/
+}
+
+.nav-menu-items {
+	/*font-size: 1.4em;*/
+	display: block;
+	text-align: center;
+	/*width: 100%;*/
+	margin:0;
+}
+
+.nav-menu-items a {
+	display: block;
+	font-size: 1.5em;
+	padding: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	vertical-align: middle;
+	font-weight: 500;
+}
+
+.nav-menu-items a:hover {
+	color: black;
+	background-color: lightgray;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.nav-menu-items a:active {
+	background-color: lightgray;
+	font-weight: 500;
+	color: black;
+}
+
+/* CSS rules for the Section Starts Here */
+/* Fist Rules for the comman classes in all the sections goes below*/
+section {
+	justify-content: center;
+}
+
+section .section-title {
+	padding: 2em 1em 0.5em 1em;
+}
+
+.section-title h2 {
+	font-size: 2.2em;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+.section-content {
+	padding: 4em 1em 1em 1em;
+}
+
+section hr {
+	display: block;
+}
+
+.hr-1 {
+	width: 50%;
+	margin-bottom: 0.1em;
+}
+
+.hr-2 {
+	width: 50%;
+	margin-bottom: 0.1em;
+}
+
+.hr-3 {
+	width: 50%;
+	margin-bottom: 0.1em;
+}
+
+/* Specific rules for the section child-elements starts here */
+#about .section-content {
+	justify-content: center;
+}
+
+#about {
+	background-color: white;
+}
+
+.section-content .about-me-content {
+	width: 100%;
+	font-size: 1.4em;
+	line-height: 1.5;
+	padding: 0.5em;
+	text-align: justify;
+}
+
+.web-image {
+	width: 100%;
+}
+
+.web-image img {
+	display: block;
+	width: 100%;
+	max-width: 35em;
+	/*height: 20em;*/
+	margin: 0 auto;
+}
+
+/* Adding a minor breakpoint for the content of "about-me" section*/
+
+@media screen and (min-width: 650px) {
+	.section-content .about-me-content {
+		order: -1;
+		width: 60%;
+	}
+
+	.web-image {
+		padding: 0 2em;
+		width: 50%;
+	}
+
+}
+
+/* Featured projects items rules starts here */
+#portfolio {
+	background-color: #222;
+	color: #fff;
+}
+
+#portfolio .section-content {
+	padding-top: 4em;
+	/*justify-content: space-around;*/
+}
+
+.project-item {
+	width: 100%;
+	padding: 0.5em 0.7em 0.5em;
+	margin-bottom: 3em;
+	min-height: 0.1em;
+	justify-content: center;
+	/*align-items: center;*/
+}
+
+.image-container {
+	margin: 0 auto;
+	max-width: 30em;
+	overflow: hidden;
+	/*border-radius: 2em;*/
+	border: 1px solid transparent;
+	transition: all .5s ease;
+	/*box-shadow: 10px 10px 10px black;*/
+}
+
+.project-item img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/* .project-item .image-container:hover {
+	border: 0.1em solid black;
+	box-shadow: 0 1px 15px 5px black;
+	/*box-shadow: 10px 10px 10px black;
+	cursor: pointer;
+}*/
+
+.project-item figcaption {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 0.5em;
+	font-weight: bold;
+}
+
+.project-item figcaption h3{
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 0.08em;
+}
+
+.button-container {
+	margin: 10px 0 0;
+}
+
+/* Small breakpoint for the project section */
+@media screen and (max-width: 320px) {
+	.project-title {
+		font-size: 5vw;
+	}
+}
+@media screen and (max-width: 1023px) {
+	.project-title {
+		display: block;
+		font-size: 1.8em;
+		padding: 0.5em;
+		text-align: center;
+	}
+
+	.project-detail {
+		display: none;
+	}
+}
+@media screen and (min-width: 768px) {
+	.project-item {
+		width: 50%;
+	}
+}
+@media screen and (min-width: 1024px) {
+
+	.project-item {
+		width: 100%;
+	}
+
+	.image-container {
+		width: 50%;
+		margin: 0;
+	}
+
+	.project-item img {
+		width: 100%;
+		max-width: 30em;
+	}
+
+	.project-item figcaption {
+		width: 50%;
+		padding-left: 2em;
+		text-align: left;
+	}
+
+	.project-title {
+		font-size: 1.8em;
+		margin-bottom: 0.5em;
+		border-bottom: 0.1em solid white;
+		padding-bottom: 0.5em;
+	}
+
+	.project-detail {
+		font-size: 1.4em;
+		font-weight: normal;
+		font-style: italic;
+		line-height: 1.6;
+	}
+}
+
+/****** Commenting the CSS rules for the img item used previously
+in the portfolio section******/
+
+/*.portfolio-item img {
+	max-width: 25em;
+	max-height: 20em;
+	border: 0.2em solid #e9967a;
+	border-radius: 2em;
+	color: black;
+	cursor: pointer;
+}
+*/
+
+/* Skill set rules starts here */
+#skills {
+	background-color: #fff;
+}
+
+#skills .section-content {
+	justify-content: center;
+}
+
+
+.skill-items {
+	padding: 0.5em;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.image-icon {
+	max-width: 4.5em;
+	max-height: 4.5em;
+	display: block;
+	margin: 0 auto;
+	/*border: 1px solid black;*/
+}
+
+.skill-items span{
+	width: 100%;
+	padding: 0.5em;
+	text-align: center;
+	display: block;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+/* Code for the "connect-session" starts here */
+#contact-me form {
+	color: black;
+	margin: 0 auto;
+	padding: 1.6em;
+	width: 100%;
+	max-width: 58em;
+}
+
+/* Minor breakpoint for the "contact-me" section */
+@media screen and (min-width: 650px) {
+	.contact-links {
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+	}
+
+}
+
+#contact-me form .input-area {
+	display: block;
+	width: 100%;
+	margin-bottom: 0.5em;
+	border-radius: 0.5em;
+	padding: 0.6em 1.2em;
+	font-size: 1.4em;
+}
+
+#contact-me form .fill-text {
+	display: block;
+	width: 100%;
+	margin-bottom: 0.5em;
+	border-radius: 0.5em;
+	padding: 0.6em 1.2em;
+	font-size: 1.4em;
+	resize: none;
+}
+
+#contact-me form .submit-button {
+	display: inline-block;
+	/*width: 20%;*/
+	float: right;
+	border-radius: 0.5em;
+	padding: 0.3em 1em;
+	font-size: 1.4em;
+	color: black;
+	background-color: white;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#contact-me {
+	/*background-color: #e9967a;*/
+	background-color: #222;
+	color: #fff;
+}
+
+#contact-me .section-content {
+	flex-direction: row;
+	justify-content: center;
+}
+
+.connect-msg {
+	width: 100%;
+	padding: 1em;
+	font-size: 1.8em;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 0.08em;
+	text-align: center;
+}
+
+.contact-links {
+	width: 90%;
+	text-align: center;
+	display: block;
+	list-style: none;
+	margin: 0 auto 4em;
+	padding: 1em;
+	flex-direction: row;
+	justify-content: center;
+	/*flex-wrap: wrap;*/
+}
+
+.contact-links .contact-items {
+	display: inline-block;
+	padding: 0.5em 1.5em;
+	/*margin-bottom: 0.5em;*/
+}
+
+#contact-me .section-content hr {
+	width: 60%;
+}
+
+.contact-items a {
+	display: inline-block;
+	/*background-color: white;*/
+	width: 3.5em;
+	height: 3.5em;
+	/*border-radius: 100%;*/
+	/*border: 0.05em solid orange;*/
+}
+
+.contact-items img {
+	/*border-radius: 100%;*/
+}
+
+.contact-items img {
+	width: 100%;
+	height: 100%;
+	/*border-radius: 50%;*/
+}
+
+/*footer {
+	text-align: center;
+	background-color: #222;
+	color: white;
+	padding: 5px;
+}*/
+
+/* Commented out till the solution for the image is not found */
+/*.contact-items img:hover {
+	position: relative;
+	top: -0.5em;
+}
+*/
+/* Styles for the MODALS for the projects */
+.modal-body {
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 100%;
+}
+
+.project-modal .modal-body p{
+	padding: 1em;
+	font-size: 1.5em;
+	line-height: 1.6;
+}
+
+.project-modal .modal-header {
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 0.08em;
+	background-color: #222;
+	color: #fff;
+	padding: 15px;
+}
+
+/*.project-modal .modal-header .modal-title {
+	font-size: 1.8em;
+}*/
+
+.modal-title {
+	font-size: 2.5em;
+	text-align: center;
+}
+
+/* Overwriting the code for <hr> which is affecting due to
+Bootstrap.css */
+hr {
+	border: 0.1px solid;
+}
+
+/* Code for the small devices starts here*/
+@media screen and (min-width: 320px) and (max-width: 359px){
+
+	.skill-items {
+		width: 50%;
+	}
+
+}
+/* Code for the medium devices starts here*/
+@media screen and (min-width: 360px) and (max-width: 425px){
+
+	.skill-items {
+		width: 30%;
+	}
+
+	.contact-items a {
+		width: 4em;
+		height: 4em;
+	}
+}
+/* Code for the large devices starts here */
+@media screen and (min-width: 426px) {
+	.skill-items {
+		width: 20%;
+	}
+
+	.contact-items a {
+		width: 4.5em;
+		height: 4.5em;
+	}
+
+}
+
+/* Code for the tablet starts here*/
+@media screen and (min-width: 768px) {
+	#collapsable-nav {
+		border-top: 0.1em solid white;
+		width: 100%;
+	}
+
+	.navbar-toggle {
+		display: none !important;
+	}
+
+	.nav-menu {
+		text-align: center;
+		padding: 0;
+	}
+
+	.nav-menu-items {
+		display: inline-block;
+	}
+
+	.nav-menu-items a {
+		display: inline-block;
+	}
+
+	.nav-menu-items a:hover {
+		color: black;
+		font-weight: 500;
+		background-color: lightgray;
+	}
+
+ 	.skill-items {
+ 		width: 15%;
+ 	}
+
+	/*#contact-me form {
+		width: 75%;
+	}*/
+
+	.contact-items a {
+		width: 5em;
+		height: 5em;
+	}
+
+ }
+
+/* Code for the Laptop and the big screen starts here*/
+@media screen and (min-width: 1134px) {
+
+}
+
+/* Behaviour on the larger screen */
+@media screen and (min-width:1200px) {
+	main {
+		width: 1200px;
+		margin: 0 auto;
+		box-shadow: 20px 20px 30px;
+	}
+
+	body {
+		background-color: lightgray;
+	}
+
+}

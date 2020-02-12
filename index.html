@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shubham</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+	<main class="flex">
+		<header class="container flex">
+			<div id="my-profile-pic" class="flex">
+				<img src="./img/angle-profile-pic.jpg" alt="Profile Picture">
+			</div>
+			<div class="title-box flex">
+				<div class="title">
+					<h1>Shubham Bhadani</h1>
+				</div>
+				<hr>
+				<div class="sub-title">
+					<h4> Web Engineer</h4>
+				</div>
+			</div><!-- End of title-box -->
+			<div class="social-media-links flex">
+				<ul class="social-media-list flex">
+					
+					<li class="sm-list-items">
+						<a target="_blank" href="https://www.linkedin.com/in/shubham-bhadani-b9b525133/">
+							<i class="fa fa-linkedin social-icons"></i>
+						</a>
+					</li>
+					<li class="sm-list-items">
+						<a target="_blank" href="https://github.com/shubham0794x">
+							<i class="fa fa-github social-icons"></i>
+						</a>
+					</li>
+					<li class="sm-list-items">
+						<a target="_blank" href="https://www.facebook.com/shubham.bhadani.393">
+							<i class="fa fa-facebook social-icons"></i>
+						</a>
+					</li>
+					<li class="sm-list-items">
+						<a target="_blank" href="https://twitter.com/shubham0794">
+							<i class="fa fa-twitter social-icons"></i>
+						</a>
+					</li>
+				</ul>
+			</div><!-- End of .social-media-links -->
+
+			<!-- Markup for the Hamburger Diagram -->
+			<div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+				<i class="fa fa-bars"></i>
+			</div><!-- hamburger is made using the fonx-awesome "bars" font -->
+
+		</header><!-- End of Header -->
+		<nav id="collapsable-nav" class="collapse navbar-collapse">
+			<ul class="nav-menu">
+				<li class="nav-menu-items">
+					<a href="#about">About</a>
+				</li>
+				<li class="nav-menu-items">
+					<a href="#portfolio">Featured Projects</a>
+				</li>
+				<li class="nav-menu-items">
+					<a href="#skills">Skills</a>
+				</li>
+				<li class="nav-menu-items">
+					<a href="#contact-me">Let's Connect</a>
+				</li>
+				<li class="nav-menu-items">
+					<a target="_blank" href="https://www.slideshare.net/slideshow/embed_code/key/eo2yufqZYRkDWc">Resume</a>
+				</li>
+			</ul>
+		</nav><!-- End of nav-bar -->
+		<section id="about" class="container flex about-me">
+			<div class="section-title">
+				<h2>About</h2>
+			</div>
+			<hr class="hr-1">
+			<hr class="hr-2">
+			<hr class="hr-3">
+			<div class="section-content flex">
+				<p class="about-me-content">
+					 Web Engineer skilled in HTML5, CSS3, Javascript, Vuejs, Knockout JS , Reactjs , Redux and other latest and coolest web technologies. Always eager to find solutions using google. I love to write – clean – responsive & accessible websites, applications. Now, I push myself every day to become a more evolved web developer. I love building great user experience.I believe technology empowers us to make our lives better, and as such, we have a responsibility to make technology useful, usable, pleasurable, and accessible.
+				</p>
+				<div class="web-image">
+					<img src="./img/web-dev-img/web-design-image-1.svg" alt="Web Design Image" class="img-responsive">
+				</div>
+			</div>
+		</section><!-- End of .about-me section -->
+		<section id="portfolio" class="container flex portfolio">
+			<div class="section-title">
+				<h2>Featured Projects</h2>
+			</div>
+			<hr class="hr-1">
+			<hr class="hr-2">
+			<hr class="hr-3">
+			<div class="section-content flex">
+
+			<!-- Attribute for the image for using model
+				data-toggle="modal" data-target="#project1"
+			 -->
+				<!-- Writing new code for the portfolio item -->
+				<figure class="project-item flex">
+					<div class="image-container">
+						<img src="./img/project_images/burger.png" alt="project pic" width="300" height="200">
+					</div><!-- image-container -->
+					<figcaption>
+						<h3 class="project-title">React Burger Builder</h3>
+						<p class="project-detail">React Project From Udemy React16 course
+In this project I used Redux for store, create-react app, Firebase for backend and Auth, React-router for routing, axios for http request.
+						</p>
+						<div class="button-container">
+	               		 	<a class="btn btn-default" target="_blank"  href="https://github.com/shubham0794x/React-Burger-Builder">GitHub Repository</a>
+						</div>
+					</figcaption>
+				</figure>
+				<figure class="project-item flex">
+					<div class="image-container">
+						<img src="./img/project_images/reactjs.png" alt="project pic" width="300" height="200">
+					</div><!-- image-container -->
+					<figcaption>
+						<h3 class="project-title">Instant Youtube Search App</h3>
+						<p class="project-detail">Instant Youtube Search App - SPA using React. Refreshes have been throttled to 300ms.Search bar which loads the resuts instantaneously.
+Most relevant result is showed in the player.
+List of five related videos in the right pane, which can be watched by clicking on them.
+						</p>
+						<div class="button-container">
+	               		 	<a class="btn btn-default" target="_blank"  href="https://github.com/shubham0794x/Instantube-React-App">GitHub Repository</a>
+						</div>
+					</figcaption>
+				</figure>
+				<figure class="project-item flex">
+					<div class="image-container">
+						<img src="./img/project_images/next-project.png" alt="project pic" width="300" height="200">
+					</div><!-- image-container -->
+					<figcaption>
+						<h3 class="project-title">NextProject</h3>
+						<p class="project-detail">Nextproject is a public marketplace that benefits businesses globally by bringing innovation, marketing and speed to their product development. UI,UX,Full stack web developement and cloud server hosting using AWS for a Sanfrancisco based ecommerce company. Visit www.nextproject.com</p>
+						<div class="button-container">
+	               		 	<a class="btn btn-default" target="_blank"  href="www.nextproject.com">www.nextproject.com</a>
+						</div>
+					</figcaption>
+				</figure>
+				<figure class="project-item flex">
+					<div class="image-container">
+						<img src="./img/project_images/project-neighborhood-map.jpg" alt="project pic" width="300" height="200">
+					</div><!-- image-container -->
+					<figcaption>
+						<h3 class="project-title">Neighborhood Map</h3>
+						<p class="project-detail">A single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. Users can search all included landmarks and, when selected, additional information about a landmark is presented from the FourSquare and Wikipedia APIs.</p>
+						<div class="button-container">
+	               		 	<a class="btn btn-default" target="_blank"  href="https://github.com/shubham0794x/udacity-neighborhood-map-project">GitHub Repository</a>
+						</div>
+					</figcaption>
+				</figure>
+				<figure class="project-item flex">
+					<div class="image-container">
+						<img src="./img/project_images/project-web-optimization.jpg" alt="project pic" width="300" height="200">
+					</div><!-- image-container -->
+					<figcaption>
+						<h3 class="project-title">Website Optimization</h3>
+						<p class="project-detail">Optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90.
+						</p>
+						<div class="button-container">
+	               		 	<a class="btn btn-default" target="_blank"  href="https://github.com/shubham0794x/Udacity-Front-End-Web-Developer-Nanodegree/tree/master/Website%20Optimisation">GitHub Repository</a>
+						</div>
+					</figcaption>
+				</figure>
+				<figure class="project-item flex">
+					<div class="image-container">
+						<img src="./img/project_images/project-feed-render-testing.jpg" alt="project pic" width="300" height="200">
+					</div><!-- image-container -->
+					<figcaption>
+						<h3 class="project-title">Feed Reader Testing</h3>
+						<p class="project-detail">Wrote comprehensive unit tests, using the Jasmine testing framework, for an RSS Feed Reader application that uses Google's RSS API.</p>
+						<div class="button-container">
+	               		 	<a class="btn btn-default" target="_blank"  href="https://github.com/shubham0794x/Udacity-Front-End-Web-Developer-Nanodegree/tree/master/feedreader-master">GitHub Repository</a>
+						</div>
+					</figcaption>
+				</figure>
+
+				<figure class="project-item flex">
+					<div class="image-container">
+						<img src="./img/project_images/project-arcade-game.jpg" alt="project pic" width="300" height="200">
+					</div><!-- image-container -->
+					<figcaption>
+						<h3 class="project-title">Classic Arcade Game Clone</h3>
+						<p class="project-detail">An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.</p>
+						<div class="button-container">
+	               		 	<a class="btn btn-default" target="_blank"  href="https://github.com/shubham0794x/Udacity-Front-End-Web-Developer-Nanodegree/tree/master/arcade-game-master">GitHub Repository</a>
+						</div>
+					</figcaption>
+				</figure>
+				<figure class="project-item flex">
+					<div class="image-container">
+						<img src="./img/project_images/pixel.png" alt="project pic" width="300" height="200">
+					</div><!-- image-container -->
+					<figcaption>
+						<h3 class="project-title">Lab: Pixel Art Maker</h3>
+						<p class="project-detail">This game is built using HTML, CSS, JQuery and JavaScript.
+It runs on any web browser.It needs internet connection to gather required files and run properly.</p>
+						<div class="button-container">
+	               		 	<a class="btn btn-default" target="_blank"  href="https://shubham0794x.github.io/Udacity-pixel-art-maker/">GitHub Repository</a>
+						</div>
+					</figcaption>
+				</figure>
+
+			</div>
+		</section><!-- End of .portfolio section -->
+		<section id="skills" class="container flex skill-set">
+			<div class="section-title">
+				<h2>Skills at a glance</h2>
+			</div>
+			<hr class="hr-1">
+			<hr class="hr-2">
+			<hr class="hr-3">
+			<div class="section-content flex">
+				<div class="skill-items flex">
+					<img src="./img/web-tech-logo/html5.svg" alt="technology log" class="image-icon">
+					<span class="skill-description">HTML-5</span>
+				</div>
+				<div class="skill-items flex">
+					<img src="./img/web-tech-logo/css-3_without_heading.svg" alt="technology log" class="image-icon">
+					<span class="skill-description">CSS-3</span>
+				</div>
+				<div class="skill-items flex">
+					<img src="./img/web-tech-logo/JavaScript_logo_2.svg" alt="technology log" class="image-icon">
+					<span class="skill-description">Javascript</span>
+				</div>
+				<div class="skill-items flex">
+					<img src="./img/web-tech-logo/jquery.svg" alt="technology log" class="image-icon">
+					<span class="skill-description">JQuery</span>
+				</div>
+				<div class="skill-items flex">
+					<img src="./img/web-tech-logo/knockout-logo.svg" alt="technology log" class="image-icon">
+					<span class="skill-description">Knockout JS</span>
+				</div>
+				<div class="skill-items flex">
+					<img src="./img/web-tech-logo/Boostrap_logo.svg" alt="technology log" class="image-icon">
+					<span class="skill-description">Bootstrap</span>
+				</div>
+				<div class="skill-items flex">
+					<img src="./img/web-tech-logo/Ei-sc-github.svg" alt="technology log" class="image-icon">
+					<span class="skill-description">Git & Github</span>
+				</div>
+				<div class="skill-items flex">
+					<img src="./img/react-logo-300x289.png" alt="technology log" class="image-icon">
+					<span class="skill-description">Reactjs</span>
+				</div>
+				
+			</div><!-- section-content ends here -->
+		</section><!-- End of .skill-set section -->
+		<section id="contact-me" class="container flex contact">
+			<div class="section-title">
+				<h2>Let's Connect</h2>
+			</div>
+			<hr class="hr-1">
+			<hr class="hr-2">
+			<hr class="hr-3">
+			<div class="section-content flex">
+				<form action="https://formspree.io/shubham.bhadani07@gmail.com" method="post">
+					<input type="text" name="name" class="input-area" placeholder="Your Name" required>
+					<input type="text" name="email" class="input-area" placeholder="Your Email" required>
+					<textarea type="text" name="message" rows="10" class="fill-text" placeholder="Your message..." required></textarea>
+					<button type="submit" class="submit-button">Send</button>
+				</form>
+				<h3 class="connect-msg">Let's Get Social</h3>
+				<hr>
+				<ul class="contact-links flex">
+					<li class="contact-items fb">
+						<a target="_blank" href="https://www.facebook.com/shubham.bhadani.393">
+							<img src="./img/social_media_new/facebook_round.svg" alt="FB Logo">
+						</a>
+					</li>
+					<li class="contact-items twitter">
+						<a target="_blank" href="https://twitter.com/shubham0794">
+							<img src="./img/social_media_new/twitter_round.svg" alt="Twitter">
+						</a>
+					</li>
+					<li class="contact-items linkedin">
+						<a target="_blank" href="https://www.linkedin.com/in/shubham-bhadani-b9b525133//">
+							<img src="./img/social_media_new/linkedin_round.svg" alt="Linkedin Logo">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section><!-- End of .contact section -->
+
+	</main>
+
+    <!-- Adding JS file needed for Bootstrap Modal to work -->
+    <script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/portfolio_builder.js"></script>
+</body>
+</html>
